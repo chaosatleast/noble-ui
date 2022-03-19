@@ -43,7 +43,7 @@ function FormSubmission() {
     
     <div className="site-card-border-less-wrapper" style={{background:'white',padding:'20px'}}>
       <Card  bordered={false}>
-
+        <div className="form-example">
         <Form  wrapperCol={{span:14}}>
 
         <Form.Item
@@ -72,7 +72,6 @@ function FormSubmission() {
           </Select>
         </Form.Item>
 
-
         <Form.Item
           name="office"
           label="Office"
@@ -86,7 +85,7 @@ function FormSubmission() {
         <Form.Item 
           label="Start date" 
           name="date"
-          rules={[{require:true, message:'Please select start date of working'}]}>
+          rules={[{required:true, message:'Please select start date of working'}]}>
           <DatePicker />
         </Form.Item>
           <Form.Item name= "age" label="Age" rules={[{ required:true,type: 'number', min: 18, max: 65 }]}>
@@ -102,6 +101,8 @@ function FormSubmission() {
 
         </Form> 
 
+        </div>
+        
       </Card>
     </div>
 

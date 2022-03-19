@@ -57,7 +57,7 @@ function SideMenu() {
                         onClick: () => setCollapsed(!collapsed),
                     })}                    
                     <Dropdown overlay={profile}>
-                        <a className="ant-dropdown-link" onClick={e => e.preventDefault()}  style={{marginLeft:"90%"}}>
+                        <a className="ant-dropdown-link" onClick={e => e.preventDefault()}  style={{position:'absolute', right:10}}>
                         <Avatar size="large" icon={<UserOutlined />} />
                         </a>
                     </Dropdown>

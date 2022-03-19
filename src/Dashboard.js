@@ -1,13 +1,22 @@
 import React,{useState} from 'react'
-import {  Statistic,Card, Col, Row,Button } from 'antd';
-import { ArrowUpOutlined, ArrowDownOutlined } from '@ant-design/icons';
+import {  Statistic,Card, Col, Row,Button,Table,Tag} from 'antd';
+import { 
+    ArrowUpOutlined, 
+    ArrowDownOutlined,
+} from '@ant-design/icons';
 import LineGraph from './Charts/LineGraph';
 import BarGraph from './Charts/BarGraph';
 import DoughnutGraph from './Charts/DoughnutGraph';
+import ToggleMenu from './ToggleMenu';
+import ProjectTable from './ProjectTable';
+import Inbox from './Inbox';
 import {YearRevenue} from './RevenueData';
-import {SalesData} from './SalesMonth'
+import {SalesData} from './SalesMonth';
+
 
 function Dashboard() {
+
+    
 
     const [yearRevenue,setYearRevenue] = useState({
         labels: YearRevenue.map((data)=>data.year),
@@ -93,8 +102,9 @@ function Dashboard() {
                 </Row>
             </div>
             <div className="site-card-border-less-wrapper" style={{background:'#f0f2f5',padding:'20px'}}>
-                <Card title="Revenue" bordered={false} style={{ width: '100%'}}>
-                    
+                <Card  bordered={false} style={{ width: '100%'}} >
+                    <h4>Revenue <ToggleMenu/></h4>
+
                     <div class="chart-container">
                         <LineGraph chartData={yearRevenue} />
                     </div>
@@ -103,14 +113,32 @@ function Dashboard() {
             <div className="site-card-wrapper" style={{background:'#f0f2f5',padding:'20px'}}>
                 <Row gutter={16}>
                 <Col span={16}>
-                    <Card  title="Monthly Sales" bordered={false}>
+                    <Card   bordered={false}>
+                        <h5>Monthly Sales <ToggleMenu/></h5>
                         <BarGraph chartData={salesData}/>
                     </Card>
                 </Col>
                 <Col span={8}>
-                    <Card title="Cloud Storage" bordered={false}>
+                    <Card bordered={false}>
+                        <h5>Cloud Storage <ToggleMenu/></h5>
                         <DoughnutGraph chartData={usage}/>
                         <Button>Upgrade</Button>
+                    </Card>
+                </Col>
+                </Row>
+            </div>
+            <div className="site-card-wrapper" style={{background:'#f0f2f5',padding:'20px'}}>
+                <Row gutter={16}>
+                <Col span={8}>
+                    <Card   bordered={false}>
+                        <h5>Inbox <ToggleMenu/></h5>
+                        <Inbox/>
+                    </Card>
+                </Col>
+                <Col span={16}>
+                    <Card bordered={false}>
+                        <h5>Project <ToggleMenu/></h5>
+                        <ProjectTable/>
                     </Card>
                 </Col>
                 </Row>

@@ -21,7 +21,7 @@ function ProjectTable() {
             key: 'start_date',
         },
         {
-            title: 'due Date',
+            title: 'Due Date',
             dataIndex: 'due_date',
             key: 'due_date',
         },

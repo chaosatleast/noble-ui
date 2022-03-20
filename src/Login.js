@@ -38,14 +38,12 @@ function Login(){
         
 
     }
-    console.log(user);
 
     return (
         <div className="Login">
             <img className="vector-2"src={vector2} alt="vector-2"></img>
             <img className="vector-1" src={vector1} alt="vector-1"></img>
-            <div className="Login-header">
-                
+            <div className="Login-header">     
             <div className="container">
                 <div className="row">
                     <div className="col">

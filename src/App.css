@@ -67,6 +67,17 @@ h1{
 }
 
 
+.chart-mini-container {
+  position:relative ;
+  margin: 10px;
+  left: 30px;
+  bottom: 10px;
+  height: 100px;
+  width: 90%;
+}
+
+
+
 
 @import '~antd/dist/antd.css';
 

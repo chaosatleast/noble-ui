@@ -4,7 +4,10 @@ import {Chart as ChartJS} from 'chart.js/auto';
 
 function BarGraph({chartData}) {
   return (
-    <Bar data ={chartData}/>
+    <Bar 
+    data={chartData}
+    
+    />
   )
 }
 

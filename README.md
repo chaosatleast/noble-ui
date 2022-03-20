@@ -1,6 +1,16 @@
-![image](https://user-images.githubusercontent.com/71021065/159110060-7b351f86-07bc-43b1-b7e9-de7f949478cb.png)
-![image](https://user-images.githubusercontent.com/71021065/159110008-3f92c3e0-5c5f-49b7-b8b8-a691b790902f.png)
-![image](https://user-images.githubusercontent.com/71021065/159110019-c2763d52-1f7b-4b3e-8326-ae2fa657f62d.png)
-![image](https://user-images.githubusercontent.com/71021065/159110030-dc01cd1e-0b48-4ba3-b064-81dfa62caf1e.png)
 
+Login:
 
+![ezgif com-gif-maker](https://user-images.githubusercontent.com/71021065/159151663-12bc29e2-e37e-4eb1-9227-9c197b07c5ce.gif)
+
+Dashboard:
+
+![ezgif com-gif-maker (1)](https://user-images.githubusercontent.com/71021065/159151747-fd17f7a2-1d23-4404-9ea5-094ff8c7f506.gif)
+
+Form Submission:
+
+![ezgif com-gif-maker (2)](https://user-images.githubusercontent.com/71021065/159151827-bf0230ac-a37c-4b94-b4a4-f69dea16c1c4.gif)
+
+Pagination
+
+![ezgif com-gif-maker (3)](https://user-images.githubusercontent.com/71021065/159151907-933f021a-a8c5-4221-b5cd-5164a37fe1fa.gif)
